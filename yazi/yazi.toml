@@ -1,0 +1,14 @@
+[opener]
+
+play = [
+  { run = '/home/daroch/.config/yazi/play.sh "$@"', orphan = true }
+]
+
+edit = [
+  { run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+
+open = [
+  { run = 'viewnior "$@"', desc = "Open Images", ext = ["png", "jpg", "jpeg", "webp", "gif"] },
+]
+

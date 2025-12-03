@@ -1,0 +1,9 @@
+[mgr]
+prepend_keymap = [
+        { on = "z",      run = "plugin zoxide",        desc = "Jump to a directory via zoxide" },
+        { on = "<C-w>",  run = "close",                desc = "Close the current tab, or quit if it's last" },
+        { on   = "l",    run  = "plugin smart-enter",  desc = "Enter the child directory, or open the file" },
+	{ on = "Z",         run = "plugin fzf",                  desc = "Jump to a file/directory via fzf" },
+]
+
+

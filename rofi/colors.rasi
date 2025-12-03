@@ -1,0 +1,53 @@
+* {
+    background: rgba(41, 40, 37, 0.7); /* dark bluish-gray */
+    primary: #537787; /* replaced warm red with steel blue */
+    primary-fixed: #8ca3b0; /* soft pale blue */
+    primary-fixed-dim: #537787;
+    on-primary: #1d2a31; /* very dark blue */
+    on-primary-fixed: #111a1f;
+    on-primary-fixed-variant: #2c3f49;
+    primary-container: #2c3f49; /* blue-gray container */
+    on-primary-container: #cfe6f3;
+
+    secondary: #6695AB; /* replaced beige-brown with pale cyan-blue */
+    secondary-fixed: #8fb7c7;
+    secondary-fixed-dim: #6695AB;
+    on-secondary: #1f2f35;
+    on-secondary-fixed: #101d22;
+    on-secondary-fixed-variant: #29414b;
+    secondary-container: #29414b;
+    on-secondary-container: #cfe6f3;
+
+    tertiary: #2C97C2; /* ocean blue */
+    tertiary-fixed: #60bce4;
+    tertiary-fixed-dim: #2C97C2;
+    on-tertiary: #09212b;
+    on-tertiary-fixed: #041117;
+    on-tertiary-fixed-variant: #13313e;
+    tertiary-container: #13313e;
+    on-tertiary-container: #d7f0fc;
+
+    error: #ffb4ab; /* keeping error red as it should stay visible */
+    on-error: #690005;
+    error-container: #93000a;
+    on-error-container: #ffdad6;
+
+    surface: #1a1e21;
+    on-surface: #bfc4c9;
+    on-surface-variant: #92999E;
+    outline: #6f7d88;
+    outline-variant: #37424b;
+    shadow: #000000;
+    scrim: #000000;
+    inverse-surface: #bfc4c9;
+    inverse-on-surface: #1d2326;
+    inverse-primary: #2C97C2;
+
+    surface-dim: #1a1e21;
+    surface-bright: #384249;
+    surface-container-lowest: #121415;
+    surface-container-low: #1e2225;
+    surface-container: #25292c;
+    surface-container-high: #2e3336;
+    surface-container-highest: #3a3f42;
+}
