@@ -1,0 +1,88 @@
+# -----------------------------------------------------
+# ALIASES
+# -----------------------------------------------------
+
+alias q='exit'
+alias vim='nvim'
+alias py='python'
+alias y='yazi'
+alias t='tmux'
+alias disk='dysk'
+# -----------------------------------------------------
+# Bluetooth
+# -----------------------------------------------------
+alias bl='bluetoothctl'
+alias blc="bluetoothctl <<< 'connect 84:0F:2A:DB:2D:0E'"
+# -----------------------------------------------------
+alias vimt='cd ~/.config/tmux && nvim tmux.conf'
+alias vimv='cd ~/.config/nvim && nvim'
+alias vimb='nvim ~/.bashrc'
+alias sourceb='source ~/.bashrc'
+# -----------------------------------------------------
+# General
+# -----------------------------------------------------
+alias c='clear'
+alias lg='lazygit'
+alias ls='eza --icons=always'
+alias lss='eza -al --icons=always'
+alias lt='eza -a --tree --level=1 --icons=always'
+alias shutdown='systemctl poweroff'
+alias v='$EDITOR'
+alias vim='$EDITOR'
+
+# -----------------------------------------------------
+# Git
+# -----------------------------------------------------
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gp="git push"
+alias gpl="git pull"
+alias gst="git stash"
+alias gsp="git stash; git pull"
+alias gfo="git fetch origin"
+alias gcheck="git checkout"
+alias gcredential="git config credential.helper store"
+
+# -----------------------------------------------------
+# Scripts
+# -----------------------------------------------------
+alias ascii='~/.config/ml4w/scripts/figlet.sh'
+
+# -----------------------------------------------------
+# System
+# -----------------------------------------------------
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+# -----------------------------------------------------
+# Music
+# -----------------------------------------------------
+# Pause / Play toggle
+alias p='echo "{ \"command\": [\"cycle\", \"pause\"] }" | socat - /tmp/mpvsocket | jq'
+
+# Explicit pause & play
+alias pause='echo "{ \"command\": [\"set_property\", \"pause\", true] }" | socat - /tmp/mpvsocket | jq'
+alias play='echo "{ \"command\": [\"set_property\", \"pause\", false] }" | socat - /tmp/mpvsocket | jq'
+
+# Volume (usage: vol 50)
+vol() {
+    echo '{ "command": ["set_property", "volume", '"$1"'] }' | socat - /tmp/mpvsocket
+}
+getvol(){
+    echo '{ "command": ["get_property", "volume"] }' | socat - /tmp/mpvsocket |jq
+}
+
+# Next / Prev track
+alias next='echo "{ \"command\": [\"playlist-next\"] }" | socat - /tmp/mpvsocket | jq'
+alias prev='echo "{ \"command\": [\"playlist-prev\"] }" | socat - /tmp/mpvsocket | jq'
+
+# Seek (usage: seek 15)
+seek() { 
+    echo "{ \"command\": [\"seek\", $1, \"relative\"] }" | socat - /tmp/mpvsocket | jq
+}
+
+# Stop / Quit
+alias stop='echo "{ \"command\": [\"quit\"] }" | socat - /tmp/mpvsocket | jq && rm -f /tmp/mpvsocket'
+alias pk='pkill mpv'
+
+

@@ -1,0 +1,30 @@
+[mgr]
+ratio = [3, 5, 10]
+
+[opener]
+
+play = [
+  { run = '/home/daroch/.config/yazi/play.sh "$@"', orphan = true }
+]
+
+# open = [
+#   { run = 'viewnior "$@"', desc = "Open Images", ext = ["png", "jpg", "jpeg", "webp", "gif"] },
+# ]
+# edit = [
+#   { run = '$EDITOR "$@"', block = true, for = "unix" },
+# ]
+
+vim = [
+  { run = 'vim "$@"', block = true, for = "unix", desc = "Vim (lightweight)" }
+]
+
+nvim = [
+  { run = 'nvim "$@"', block = true, for = "unix", desc = "Neovim (LSP / jdtls)" }
+]
+
+
+[open]
+rules = [
+  { name = "*.java", use = [ "vim", "nvim" ] },
+  { mime = "text/*", use = ["nvim", "vim" ] },
+]
