@@ -1,4 +1,10 @@
 # -----------------------------------------------------
+# Exports
+# -----------------------------------------------------
+export EDITOR=nvim
+export PATH="/usr/lib/ccache/bin/:$PATH"
+
+# -----------------------------------------------------
 # CUSTOMIZATION
 # -----------------------------------------------------
 POSH=agnoster
@@ -33,60 +39,4 @@ set -o vi
 export PATH="$PATH:/home/daroch/.local/bin"
 alias fd="fd -E node_modules -E .git -E dist"
 
-# cdf() {
-#     local result
-#     result=$(fd "$@" | head -n 1)
-#
-#     if [ -z "$result" ]; then
-#         echo "Nothing found."
-#         return 1
-#     fi
-#
-#     # If more than one match, complain
-#     if [ "$(fd "$@" | wc -l)" -gt 1 ]; then
-#         echo "Multiple matches found:"
-#         fd "$@"
-#         return 1
-#     fi
-#
-#     # If it's a directory, enter it
-#     if [ -d "$result" ]; then
-#         cd "$result" || return
-#         return
-#     fi
-#
-#     # If it's a file, climb up until it's a directory
-#     while [ ! -d "$result" ]; do
-#         result=$(dirname "$result")
-#     done
-#
-#     cd "$result" || return
-# }
 
-cdf() {
-    local result
-    result=$(fd "$@" | fzf \
-        --height 40% \
-        --reverse \
-        --prompt="Select: " \
-        --bind "j:down,k:up,ctrl-d:half-page-down,ctrl-u:half-page-up,enter:accept" \
-        --ansi)
-
-    if [ -z "$result" ]; then
-        echo "Nothing selected."
-        return 1
-    fi
-
-    # If it's a directory, cd into it
-    if [ -d "$result" ]; then
-        cd "$result" || return
-        return
-    fi
-
-    # If it's a file, climb up to parent dir
-    while [ ! -d "$result" ]; do
-        result=$(dirname "$result")
-    done
-
-    cd "$result" || return
-}

@@ -85,4 +85,31 @@ seek() {
 alias stop='echo "{ \"command\": [\"quit\"] }" | socat - /tmp/mpvsocket | jq && rm -f /tmp/mpvsocket'
 alias pk='pkill mpv'
 
+# -----------------------------------------------------
+cdf() {
+    local result
+    result=$(fd "$@" | fzf \
+        --height 40% \
+        --reverse \
+        --prompt="Select: " \
+        --bind "j:down,k:up,ctrl-d:half-page-down,ctrl-u:half-page-up,enter:accept" \
+        --ansi)
 
+    if [ -z "$result" ]; then
+        echo "Nothing selected."
+        return 1
+    fi
+
+    # If it's a directory, cd into it
+    if [ -d "$result" ]; then
+        cd "$result" || return
+        return
+    fi
+
+    # If it's a file, climb up to parent dir
+    while [ ! -d "$result" ]; do
+        result=$(dirname "$result")
+    done
+
+    cd "$result" || return
+}

@@ -2,29 +2,24 @@
 ratio = [3, 5, 10]
 
 [opener]
+play = [ { run = '/home/daroch/.config/yazi/play.sh "$@"', orphan = true } ]
 
-play = [
-  { run = '/home/daroch/.config/yazi/play.sh "$@"', orphan = true }
-]
+# # Example of adding Viewnior to the existing image rules
+# [[open.prepend_rules]]
+# mime = "image/*"
+# use = [ "viewnior", "open" ]
 
-# open = [
-#   { run = 'viewnior "$@"', desc = "Open Images", ext = ["png", "jpg", "jpeg", "webp", "gif"] },
+# vim = [
+#   { run = 'vim "$@"', block = true, for = "unix", desc = "Vim (lightweight)" }
 # ]
-# edit = [
-#   { run = '$EDITOR "$@"', block = true, for = "unix" },
+#
+# nvim = [
+#   { run = 'nvim "$@"', block = true, for = "unix", desc = "Neovim (LSP / jdtls)" }
 # ]
-
-vim = [
-  { run = 'vim "$@"', block = true, for = "unix", desc = "Vim (lightweight)" }
-]
-
-nvim = [
-  { run = 'nvim "$@"', block = true, for = "unix", desc = "Neovim (LSP / jdtls)" }
-]
-
-
-[open]
-rules = [
-  { name = "*.java", use = [ "vim", "nvim" ] },
-  { mime = "text/*", use = ["nvim", "vim" ] },
-]
+#
+#
+# [open]
+# rules = [
+#   { name = "*.java", use = [ "vim", "nvim" ] },
+#   { mime = "text/*", use = ["nvim", "vim" ] },
+# ]

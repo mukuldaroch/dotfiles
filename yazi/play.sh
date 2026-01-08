@@ -3,16 +3,17 @@
 file="$1"
 mime=$(file --mime-type -b "$file")
 
-# Kill any existing mpv process
-pkill -x mpv
 
 case "$mime" in
     video/*)
-        ffplay -autoexit "$file" >/dev/null 2>&1 &
+        mpv --force-window "$file" &
+        notify-send "Playing" "$(basename "$file")"
         ;;
     audio/*)
+        # Kill any existing mpv process
+        pkill -x mpv
         mpv --no-video --force-window=no --input-ipc-server="/tmp/mpvsocket" "$file" &
-        notify-send "🎵 Now Playing" "$(basename "$file")"
+        notify-send "🎵 Playing" "$(basename "$file")"
         ;;
     *)
         echo "Unknown file type: $mime"
