@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/nissan.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a1114",
+        "foreground": "#bdc8cc",
+        "cursor": "#bdc8cc"
+    },
+    "colors": {
+        "color0": "#0a1114",
+        "color1": "#536866",
+        "color2": "#546A6F",
+        "color3": "#768775",
+        "color4": "#637B84",
+        "color5": "#3D8085",
+        "color6": "#728B92",
+        "color7": "#bdc8cc",
+        "color8": "#848c8e",
+        "color9": "#536866",
+        "color10": "#546A6F",
+        "color11": "#768775",
+        "color12": "#637B84",
+        "color13": "#3D8085",
+        "color14": "#728B92",
+        "color15": "#bdc8cc"
+    }
+}

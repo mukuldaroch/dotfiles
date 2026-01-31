@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Side-view-of-Machu-Picchu.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1813",
+        "foreground": "#cfdfee",
+        "cursor": "#cfdfee"
+    },
+    "colors": {
+        "color0": "#1a1813",
+        "color1": "#CDAF40",
+        "color2": "#0D72A8",
+        "color3": "#507994",
+        "color4": "#4093C2",
+        "color5": "#C2B097",
+        "color6": "#EECD9F",
+        "color7": "#cfdfee",
+        "color8": "#909ca6",
+        "color9": "#CDAF40",
+        "color10": "#0D72A8",
+        "color11": "#507994",
+        "color12": "#4093C2",
+        "color13": "#C2B097",
+        "color14": "#EECD9F",
+        "color15": "#cfdfee"
+    }
+}

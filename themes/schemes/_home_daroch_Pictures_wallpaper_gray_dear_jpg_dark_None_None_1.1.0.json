@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/gray_dear.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080808",
+        "foreground": "#b6b7b7",
+        "cursor": "#b6b7b7"
+    },
+    "colors": {
+        "color0": "#080808",
+        "color1": "#3F4140",
+        "color2": "#4E4E4F",
+        "color3": "#5E5E60",
+        "color4": "#5F6160",
+        "color5": "#696A6A",
+        "color6": "#7E807F",
+        "color7": "#b6b7b7",
+        "color8": "#7f8080",
+        "color9": "#3F4140",
+        "color10": "#4E4E4F",
+        "color11": "#5E5E60",
+        "color12": "#5F6160",
+        "color13": "#696A6A",
+        "color14": "#7E807F",
+        "color15": "#b6b7b7"
+    }
+}

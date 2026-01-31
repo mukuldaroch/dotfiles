@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/wallhaven3.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#130f10",
+        "foreground": "#d9d6d3",
+        "cursor": "#d9d6d3"
+    },
+    "colors": {
+        "color0": "#130f10",
+        "color1": "#9B6927",
+        "color2": "#96724D",
+        "color3": "#D8A740",
+        "color4": "#747885",
+        "color5": "#7D818C",
+        "color6": "#9A9BA0",
+        "color7": "#d9d6d3",
+        "color8": "#979593",
+        "color9": "#9B6927",
+        "color10": "#96724D",
+        "color11": "#D8A740",
+        "color12": "#747885",
+        "color13": "#7D818C",
+        "color14": "#9A9BA0",
+        "color15": "#d9d6d3"
+    }
+}

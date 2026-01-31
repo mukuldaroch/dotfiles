@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Christ-the-Redeemer.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191b12",
+        "foreground": "#dfddce",
+        "cursor": "#dfddce"
+    },
+    "colors": {
+        "color0": "#191b12",
+        "color1": "#968D71",
+        "color2": "#737F80",
+        "color3": "#369DA1",
+        "color4": "#679E96",
+        "color5": "#9BA893",
+        "color6": "#ADC8B2",
+        "color7": "#dfddce",
+        "color8": "#9c9a90",
+        "color9": "#968D71",
+        "color10": "#737F80",
+        "color11": "#369DA1",
+        "color12": "#679E96",
+        "color13": "#9BA893",
+        "color14": "#ADC8B2",
+        "color15": "#dfddce"
+    }
+}

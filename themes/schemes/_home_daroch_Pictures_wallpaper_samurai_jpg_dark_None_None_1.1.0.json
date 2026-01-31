@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/samurai.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#05061E",
+        "foreground": "#e6e7dd",
+        "cursor": "#e6e7dd"
+    },
+    "colors": {
+        "color0": "#05061E",
+        "color1": "#6D7C83",
+        "color2": "#78878A",
+        "color3": "#99A4A0",
+        "color4": "#BCC2B6",
+        "color5": "#C7CBBC",
+        "color6": "#D6D8C6",
+        "color7": "#e6e7dd",
+        "color8": "#a1a19a",
+        "color9": "#6D7C83",
+        "color10": "#78878A",
+        "color11": "#99A4A0",
+        "color12": "#BCC2B6",
+        "color13": "#C7CBBC",
+        "color14": "#D6D8C6",
+        "color15": "#e6e7dd"
+    }
+}

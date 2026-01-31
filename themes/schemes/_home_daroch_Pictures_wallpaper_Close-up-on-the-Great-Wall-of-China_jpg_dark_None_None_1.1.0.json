@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Close-up-on-the-Great-Wall-of-China.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a100b",
+        "foreground": "#ebe4df",
+        "cursor": "#ebe4df"
+    },
+    "colors": {
+        "color0": "#1a100b",
+        "color1": "#AA8D6A",
+        "color2": "#CA9A5E",
+        "color3": "#B19E8D",
+        "color4": "#CFB29F",
+        "color5": "#BEC1B5",
+        "color6": "#E1C9B5",
+        "color7": "#ebe4df",
+        "color8": "#a49f9c",
+        "color9": "#AA8D6A",
+        "color10": "#CA9A5E",
+        "color11": "#B19E8D",
+        "color12": "#CFB29F",
+        "color13": "#BEC1B5",
+        "color14": "#E1C9B5",
+        "color15": "#ebe4df"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/hp1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0b06",
+        "foreground": "#d5d8df",
+        "cursor": "#d5d8df"
+    },
+    "colors": {
+        "color0": "#0a0b06",
+        "color1": "#596A87",
+        "color2": "#687490",
+        "color3": "#3F9ABB",
+        "color4": "#7887A2",
+        "color5": "#919BAF",
+        "color6": "#AAB5C9",
+        "color7": "#d5d8df",
+        "color8": "#95979c",
+        "color9": "#596A87",
+        "color10": "#687490",
+        "color11": "#3F9ABB",
+        "color12": "#7887A2",
+        "color13": "#919BAF",
+        "color14": "#AAB5C9",
+        "color15": "#d5d8df"
+    }
+}

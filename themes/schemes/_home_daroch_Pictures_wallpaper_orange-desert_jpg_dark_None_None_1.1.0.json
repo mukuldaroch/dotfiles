@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/orange-desert.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1210",
+        "foreground": "#ebc59f",
+        "cursor": "#ebc59f"
+    },
+    "colors": {
+        "color0": "#1b1210",
+        "color1": "#B3512E",
+        "color2": "#AD5633",
+        "color3": "#D16230",
+        "color4": "#668569",
+        "color5": "#969066",
+        "color6": "#DD9E52",
+        "color7": "#ebc59f",
+        "color8": "#a4896f",
+        "color9": "#B3512E",
+        "color10": "#AD5633",
+        "color11": "#D16230",
+        "color12": "#668569",
+        "color13": "#969066",
+        "color14": "#DD9E52",
+        "color15": "#ebc59f"
+    }
+}

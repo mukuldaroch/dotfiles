@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/wallpaper/default.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#061C24",
+        "foreground": "#adb6b7",
+        "cursor": "#adb6b7"
+    },
+    "colors": {
+        "color0": "#061C24",
+        "color1": "#45585B",
+        "color2": "#495D60",
+        "color3": "#55696C",
+        "color4": "#66787A",
+        "color5": "#B1603C",
+        "color6": "#E78446",
+        "color7": "#adb6b7",
+        "color8": "#797f80",
+        "color9": "#45585B",
+        "color10": "#495D60",
+        "color11": "#55696C",
+        "color12": "#66787A",
+        "color13": "#B1603C",
+        "color14": "#E78446",
+        "color15": "#adb6b7"
+    }
+}

@@ -1,0 +1,21 @@
+set $wallpaper /home/daroch/Pictures/wallpaper/Taj-Mahal.jpg
+
+set $background #11130f
+set $foreground #c0d2e2
+
+set $color0 #11130f
+set $color1 #0974B2
+set $color2 #528BA3
+set $color3 #168FCF
+set $color4 #61A6D8
+set $color5 #D1B099
+set $color6 #CCC2B8
+set $color7 #c0d2e2
+set $color8 #86939e
+set $color9 #0974B2
+set $color10 #528BA3
+set $color11 #168FCF
+set $color12 #61A6D8
+set $color13 #D1B099
+set $color14 #CCC2B8
+set $color15 #c0d2e2

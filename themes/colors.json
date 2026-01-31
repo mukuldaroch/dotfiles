@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Taj-Mahal.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#11130f",
+        "foreground": "#c0d2e2",
+        "cursor": "#c0d2e2"
+    },
+    "colors": {
+        "color0": "#11130f",
+        "color1": "#0974B2",
+        "color2": "#528BA3",
+        "color3": "#168FCF",
+        "color4": "#61A6D8",
+        "color5": "#D1B099",
+        "color6": "#CCC2B8",
+        "color7": "#c0d2e2",
+        "color8": "#86939e",
+        "color9": "#0974B2",
+        "color10": "#528BA3",
+        "color11": "#168FCF",
+        "color12": "#61A6D8",
+        "color13": "#D1B099",
+        "color14": "#CCC2B8",
+        "color15": "#c0d2e2"
+    }
+}

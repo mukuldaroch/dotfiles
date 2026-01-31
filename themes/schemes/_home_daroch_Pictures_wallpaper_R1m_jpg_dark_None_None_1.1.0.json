@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/R1m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a090c",
+        "foreground": "#cdcac8",
+        "cursor": "#cdcac8"
+    },
+    "colors": {
+        "color0": "#0a090c",
+        "color1": "#7D826E",
+        "color2": "#949871",
+        "color3": "#D2B258",
+        "color4": "#525F9A",
+        "color5": "#938E8C",
+        "color6": "#ABAC8E",
+        "color7": "#cdcac8",
+        "color8": "#8f8d8c",
+        "color9": "#7D826E",
+        "color10": "#949871",
+        "color11": "#D2B258",
+        "color12": "#525F9A",
+        "color13": "#938E8C",
+        "color14": "#ABAC8E",
+        "color15": "#cdcac8"
+    }
+}

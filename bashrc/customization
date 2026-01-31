@@ -1,0 +1,41 @@
+
+# Exports
+# -----------------------------------------------------
+export EDITOR=nvim
+export PATH="/usr/lib/ccache/bin/:$PATH"
+
+# -----------------------------------------------------
+# CUSTOMIZATION
+# -----------------------------------------------------
+POSH=agnoster
+
+# -----------------------------------------------------
+# Prompt
+# -----------------------------------------------------
+# eval "$(oh-my-posh init bash --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init bash --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
+
+# -----------------------------------------------------
+# Pywal
+# -----------------------------------------------------
+# cat ~/.cache/wal/sequences
+
+
+# -----------------------------------------------------
+# custom
+# -----------------------------------------------------
+eval "$(zoxide init bash)"
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+alias rm='trash-put'
+alias vi="/usr/bin/vim"  # or wherever real vim is
+# alias pgcli=" pgcli -U daroch -d brodb" 
+
+set -o vi
+
+# Created by `pipx` on 2025-07-11 14:51:47
+export PATH="$PATH:/home/daroch/.local/bin"
+alias fd="fd -E node_modules -E .git -E dist"
+

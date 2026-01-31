@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/bullet-space.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2e211f",
+        "foreground": "#c5dddc",
+        "cursor": "#c5dddc"
+    },
+    "colors": {
+        "color0": "#2e211f",
+        "color1": "#53A3B4",
+        "color2": "#6DB9C4",
+        "color3": "#7CC2C8",
+        "color4": "#98B5B3",
+        "color5": "#BDBEAA",
+        "color6": "#EAD6AC",
+        "color7": "#c5dddc",
+        "color8": "#899a9a",
+        "color9": "#53A3B4",
+        "color10": "#6DB9C4",
+        "color11": "#7CC2C8",
+        "color12": "#98B5B3",
+        "color13": "#BDBEAA",
+        "color14": "#EAD6AC",
+        "color15": "#c5dddc"
+    }
+}

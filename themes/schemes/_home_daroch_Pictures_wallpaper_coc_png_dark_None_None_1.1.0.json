@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/coc.png",
+    "alpha": "100",
+    "special": {
+        "background": "#11170d",
+        "foreground": "#cbdce5",
+        "cursor": "#cbdce5"
+    },
+    "colors": {
+        "color0": "#11170d",
+        "color1": "#837E84",
+        "color2": "#428BBA",
+        "color3": "#5C90B1",
+        "color4": "#6BA7CF",
+        "color5": "#BBB39F",
+        "color6": "#91B7D0",
+        "color7": "#cbdce5",
+        "color8": "#8e9aa0",
+        "color9": "#837E84",
+        "color10": "#428BBA",
+        "color11": "#5C90B1",
+        "color12": "#6BA7CF",
+        "color13": "#BBB39F",
+        "color14": "#91B7D0",
+        "color15": "#cbdce5"
+    }
+}

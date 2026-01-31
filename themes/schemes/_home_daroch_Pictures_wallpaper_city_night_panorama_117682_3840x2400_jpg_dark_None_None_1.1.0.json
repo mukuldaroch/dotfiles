@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/city_night_panorama_117682_3840x2400.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0a0b",
+        "foreground": "#c29fa5",
+        "cursor": "#c29fa5"
+    },
+    "colors": {
+        "color0": "#0c0a0b",
+        "color1": "#5C3B42",
+        "color2": "#6C3A44",
+        "color3": "#324B4E",
+        "color4": "#71464F",
+        "color5": "#9D3647",
+        "color6": "#B73047",
+        "color7": "#c29fa5",
+        "color8": "#876f73",
+        "color9": "#5C3B42",
+        "color10": "#6C3A44",
+        "color11": "#324B4E",
+        "color12": "#71464F",
+        "color13": "#9D3647",
+        "color14": "#B73047",
+        "color15": "#c29fa5"
+    }
+}

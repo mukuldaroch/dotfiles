@@ -1,0 +1,41 @@
+{
+
+    // Position TOP
+
+    "layer": "top",
+    "margin-bottom": -5,
+    "margin-top": -4,
+
+    "layer": "top",
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+
+    "include": [
+        "~/.config/waybar/themes/waybar-black/modules.json"
+    ],
+
+    // Modules Left
+
+    "modules-left": [
+    //    "custom/appmenu",
+        "hyprland/workspaces",
+        "wlr/taskbar",
+        "hyprland/window"
+    ],
+
+
+    // Modules Right    
+
+    "modules-right": [
+        "pulseaudio",
+        "bluetooth",
+        "backlight",
+        "battery", 
+        "network",
+        "custom/exit",
+        "clock"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/IMG_0605.JPG",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0f0c",
+        "foreground": "#aebf9b",
+        "cursor": "#aebf9b"
+    },
+    "colors": {
+        "color0": "#0c0f0c",
+        "color1": "#51722E",
+        "color2": "#3A4745",
+        "color3": "#546254",
+        "color4": "#5C8333",
+        "color5": "#678D36",
+        "color6": "#74A031",
+        "color7": "#aebf9b",
+        "color8": "#79856c",
+        "color9": "#51722E",
+        "color10": "#3A4745",
+        "color11": "#546254",
+        "color12": "#5C8333",
+        "color13": "#678D36",
+        "color14": "#74A031",
+        "color15": "#aebf9b"
+    }
+}

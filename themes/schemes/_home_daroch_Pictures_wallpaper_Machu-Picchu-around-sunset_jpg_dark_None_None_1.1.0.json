@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Machu-Picchu-around-sunset.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191b15",
+        "foreground": "#ddd0c1",
+        "cursor": "#ddd0c1"
+    },
+    "colors": {
+        "color0": "#191b15",
+        "color1": "#C9763E",
+        "color2": "#90735C",
+        "color3": "#6A8F4B",
+        "color4": "#E19536",
+        "color5": "#A09165",
+        "color6": "#EA9E61",
+        "color7": "#ddd0c1",
+        "color8": "#9a9187",
+        "color9": "#C9763E",
+        "color10": "#90735C",
+        "color11": "#6A8F4B",
+        "color12": "#E19536",
+        "color13": "#A09165",
+        "color14": "#EA9E61",
+        "color15": "#ddd0c1"
+    }
+}

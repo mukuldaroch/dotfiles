@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/wp3930462.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a0a",
+        "foreground": "#85aac5",
+        "cursor": "#85aac5"
+    },
+    "colors": {
+        "color0": "#0a0a0a",
+        "color1": "#2D4D59",
+        "color2": "#4C524F",
+        "color3": "#9F1618",
+        "color4": "#C0433A",
+        "color5": "#A5A249",
+        "color6": "#86A379",
+        "color7": "#85aac5",
+        "color8": "#5d7689",
+        "color9": "#2D4D59",
+        "color10": "#4C524F",
+        "color11": "#9F1618",
+        "color12": "#C0433A",
+        "color13": "#A5A249",
+        "color14": "#86A379",
+        "color15": "#85aac5"
+    }
+}

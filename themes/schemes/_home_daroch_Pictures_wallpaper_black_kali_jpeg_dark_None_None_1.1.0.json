@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/black_kali.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#aeaeae",
+        "cursor": "#aeaeae"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#484848",
+        "color2": "#545454",
+        "color3": "#5C5C5C",
+        "color4": "#626262",
+        "color5": "#666666",
+        "color6": "#686868",
+        "color7": "#aeaeae",
+        "color8": "#797979",
+        "color9": "#484848",
+        "color10": "#545454",
+        "color11": "#5C5C5C",
+        "color12": "#626262",
+        "color13": "#666666",
+        "color14": "#686868",
+        "color15": "#aeaeae"
+    }
+}

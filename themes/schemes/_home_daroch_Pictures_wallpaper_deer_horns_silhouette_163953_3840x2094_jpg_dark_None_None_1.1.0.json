@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/deer_horns_silhouette_163953_3840x2094.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0906",
+        "foreground": "#f2efd0",
+        "cursor": "#f2efd0"
+    },
+    "colors": {
+        "color0": "#0d0906",
+        "color1": "#FAB46F",
+        "color2": "#FBCB67",
+        "color3": "#FCC26D",
+        "color4": "#EABC89",
+        "color5": "#F9D48A",
+        "color6": "#F7E89A",
+        "color7": "#f2efd0",
+        "color8": "#a9a791",
+        "color9": "#FAB46F",
+        "color10": "#FBCB67",
+        "color11": "#FCC26D",
+        "color12": "#EABC89",
+        "color13": "#F9D48A",
+        "color14": "#F7E89A",
+        "color15": "#f2efd0"
+    }
+}

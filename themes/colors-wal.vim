@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/daroch/Pictures/wallpaper/Taj-Mahal.jpg"
+let background = "#11130f"
+let foreground = "#c0d2e2"
+let cursor     = "#c0d2e2"
+
+" Colors
+let color0  = "#11130f"
+let color1  = "#0974B2"
+let color2  = "#528BA3"
+let color3  = "#168FCF"
+let color4  = "#61A6D8"
+let color5  = "#D1B099"
+let color6  = "#CCC2B8"
+let color7  = "#c0d2e2"
+let color8  = "#86939e"
+let color9  = "#0974B2"
+let color10 = "#528BA3"
+let color11 = "#168FCF"
+let color12 = "#61A6D8"
+let color13 = "#D1B099"
+let color14 = "#CCC2B8"
+let color15 = "#c0d2e2"

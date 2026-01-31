@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/deer_art_vector_134088_1280x720.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0717",
+        "foreground": "#d5acc5",
+        "cursor": "#d5acc5"
+    },
+    "colors": {
+        "color0": "#0b0717",
+        "color1": "#813F72",
+        "color2": "#8A4976",
+        "color3": "#99677A",
+        "color4": "#753883",
+        "color5": "#7D4186",
+        "color6": "#A15A8C",
+        "color7": "#d5acc5",
+        "color8": "#957889",
+        "color9": "#813F72",
+        "color10": "#8A4976",
+        "color11": "#99677A",
+        "color12": "#753883",
+        "color13": "#7D4186",
+        "color14": "#A15A8C",
+        "color15": "#d5acc5"
+    }
+}

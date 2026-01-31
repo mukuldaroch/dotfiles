@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/Great-Wall-of-China-view.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d150f",
+        "foreground": "#d1d9e4",
+        "cursor": "#d1d9e4"
+    },
+    "colors": {
+        "color0": "#0d150f",
+        "color1": "#5F788D",
+        "color2": "#708DA9",
+        "color3": "#73AAE1",
+        "color4": "#919EA7",
+        "color5": "#D7C19B",
+        "color6": "#9EB5D2",
+        "color7": "#d1d9e4",
+        "color8": "#92979f",
+        "color9": "#5F788D",
+        "color10": "#708DA9",
+        "color11": "#73AAE1",
+        "color12": "#919EA7",
+        "color13": "#D7C19B",
+        "color14": "#9EB5D2",
+        "color15": "#d1d9e4"
+    }
+}

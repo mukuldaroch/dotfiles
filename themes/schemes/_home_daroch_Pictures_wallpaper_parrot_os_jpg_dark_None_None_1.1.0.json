@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/parrot_os.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F1110",
+        "foreground": "#9aaebe",
+        "cursor": "#9aaebe"
+    },
+    "colors": {
+        "color0": "#0F1110",
+        "color1": "#3E513E",
+        "color2": "#245565",
+        "color3": "#98191A",
+        "color4": "#A15640",
+        "color5": "#8D9464",
+        "color6": "#1A6994",
+        "color7": "#9aaebe",
+        "color8": "#6b7985",
+        "color9": "#3E513E",
+        "color10": "#245565",
+        "color11": "#98191A",
+        "color12": "#A15640",
+        "color13": "#8D9464",
+        "color14": "#1A6994",
+        "color15": "#9aaebe"
+    }
+}

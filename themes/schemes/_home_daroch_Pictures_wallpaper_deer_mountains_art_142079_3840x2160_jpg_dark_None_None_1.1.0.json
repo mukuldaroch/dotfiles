@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daroch/Pictures/wallpaper/deer_mountains_art_142079_3840x2160.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#04080E",
+        "foreground": "#cbdee4",
+        "cursor": "#cbdee4"
+    },
+    "colors": {
+        "color0": "#04080E",
+        "color1": "#203D83",
+        "color2": "#35648C",
+        "color3": "#47739B",
+        "color4": "#5E96AF",
+        "color5": "#41BBB3",
+        "color6": "#8DB6C8",
+        "color7": "#cbdee4",
+        "color8": "#8e9b9f",
+        "color9": "#203D83",
+        "color10": "#35648C",
+        "color11": "#47739B",
+        "color12": "#5E96AF",
+        "color13": "#41BBB3",
+        "color14": "#8DB6C8",
+        "color15": "#cbdee4"
+    }
+}
