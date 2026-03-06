@@ -17,8 +17,8 @@ require("yatline"):setup({
                 { type = "string", custom = false, name = "date", params = { "%X" } },
             },
             section_c = {
-                { type = "string", custom = false, name = "song"},
-	    },
+                { type = "string", custom = false, name = "song" },
+            },
         },
     },
 

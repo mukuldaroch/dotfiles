@@ -1,1 +1,1 @@
-/waybar-black;/waybar-black
+/waybar-whiteText;/waybar-whiteText

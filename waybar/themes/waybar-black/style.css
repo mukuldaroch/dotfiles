@@ -1,11 +1,3 @@
-/*
- * __        __          _                  ____  _         _       
- * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
- *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
- *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
- *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
- *                 |___/                              |___/         
-*/
 
 /* -----------------------------------------------------
  * Import Pywal colors 
@@ -28,7 +20,6 @@
         "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto,
         Helvetica, Arial, sans-serif;
     border: none;
-    border-radius: 0px;
 }
 
 window#waybar {
@@ -58,12 +49,12 @@ window#waybar {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @textcolor1;
+    color: @textcolor2;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    color: @textcolor3;
+    color: @textcolor2;
     background: @workspacesbackground2;
     border-radius: 15px;
     min-width: 40px;
@@ -71,25 +62,9 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    color: @textcolor3;
+    color: @textcolor1;
     background: @workspacesbackground2;
     border-radius: 15px;
-}
-
-/* -----------------------------------------------------
- * Tooltips
- * ----------------------------------------------------- */
-
-tooltip {
-    border-radius: 16px;
-    background-color: @backgrounddark;
-    opacity: 0.9;
-    padding: 20px;
-    margin: 0px;
-}
-
-tooltip label {
-    color: @textcolor1;
 }
 
 /* -----------------------------------------------------
@@ -124,181 +99,7 @@ tooltip label {
     margin-right: 0;
 }
 
-/* -----------------------------------------------------
- * Custom Quicklinks
- * ----------------------------------------------------- */
 
-#custom-brave,
-#custom-browser,
-#custom-keybindings,
-#custom-outlook,
-#custom-filemanager,
-#custom-teams,
-#custom-chatgpt,
-#custom-calculator,
-#custom-windowsvm,
-#custom-cliphist,
-#custom-settings,
-#custom-wallpaper,
-#custom-system,
-#custom-hyprshade,
-#custom-hypridle,
-#custom-quicklink1,
-#custom-quicklink2,
-#custom-quicklink3,
-#custom-quicklink4,
-#custom-quicklink5,
-#custom-quicklink6,
-#custom-quicklink7,
-#custom-quicklink8,
-#custom-quicklink9,
-#custom-quicklink10,
-#custom-waybarthemes {
-    margin-right: 23px;
-    font-size: 20px;
-    font-weight: bold;
-    color: @iconcolor;
-}
-
-#custom-hyprshade {
-    margin-right: 12px;
-}
-
-#custom-hypridle {
-    margin-right: 16px;
-}
-
-#custom-hypridle.active {
-    color: @iconcolor;
-}
-
-#custom-hypridle.notactive {
-    color: #dc2f2f;
-}
-
-#custom-waybarthemes,
-#custom-system {
-    margin-right: 15px;
-}
-
-/* -----------------------------------------------------
- * Idle Inhibator
- * ----------------------------------------------------- */
-
-#idle_inhibitor {
-    margin-right: 15px;
-    font-size: 22px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
-}
-
-#idle_inhibitor.activated {
-    margin-right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: #dc2f2f;
-}
-
-/* -----------------------------------------------------
- * Custom Modules
- * ----------------------------------------------------- */
-
-#custom-appmenu {
-    margin-right: 1px;
-    margin-left: 1px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    background-image: url("../assets/arch.blue.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-/* -----------------------------------------------------
- * Custom Exit
- * ----------------------------------------------------- */
-
-#custom-exit {
-    margin: 0px 20px 0px 0px;
-    padding: 0px;
-    font-size: 20px;
-    color: white;
-}
-
-/* -----------------------------------------------------
- * Custom Updates
- * ----------------------------------------------------- */
-
-#custom-updates {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 10px 15px 10px 0px;
-}
-
-#custom-updates.green {
-    background-color: @backgrounddark;
-}
-
-#custom-updates.yellow {
-    background-color: #ff9a3c;
-    color: #ffffff;
-}
-
-#custom-updates.red {
-    background-color: #dc2f2f;
-    color: #ffffff;
-}
-
-/* -----------------------------------------------------
- * Hardware Group
- * ----------------------------------------------------- */
-
-#disk,
-#memory,
-#cpu,
-#language {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    color: @iconcolor;
-}
-
-#language {
-    margin-right: 10px;
-}
-
-/* -----------------------------------------------------
- * Clock
- * ----------------------------------------------------- */
-
-#clock {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 10px 15px 10px 0px;
-}
-
-/* -----------------------------------------------------
- * Backlight
- * ----------------------------------------------------- */
-
-#backlight {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 10px 15px 10px 0px;
-}
 
 /* -----------------------------------------------------
  * Pulseaudio
@@ -314,29 +115,6 @@ tooltip label {
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
-    color: @textcolor1;
-}
-
-/* -----------------------------------------------------
- * Network
- * ----------------------------------------------------- */
-
-#network {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 10px 15px 10px 0px;
-}
-
-#network.ethernet {
-    background-color: @backgrounddark;
-    color: @textcolor1;
-}
-
-#network.wifi {
     background-color: @backgrounddark;
     color: @textcolor1;
 }
@@ -360,6 +138,19 @@ tooltip label {
     background-color: transparent;
     padding: 0px;
     margin: 0px;
+}
+
+/* -----------------------------------------------------
+ * Backlight
+ * ----------------------------------------------------- */
+
+#backlight {
+    background-color: @backgrounddark;
+    font-size: 16px;
+    color: @textcolor1;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
 }
 
 /* -----------------------------------------------------
@@ -403,22 +194,133 @@ tooltip label {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+/* -----------------------------------------------------
+ * Network
+ * ----------------------------------------------------- */
+
+#network {
+    background-color: @backgrounddark;
+    font-size: 16px;
+    color: @textcolor1;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#network.ethernet {
+    background-color: @backgrounddark;
+    color: @textcolor1;
+}
+
+#network.wifi {
+    background-color: @backgrounddark;
+    color: @textcolor1;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+    background-color: @backgrounddark;
+    font-size: 16px;
+    color: @textcolor1;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+/* -----------------------------------------------------
+ * Custom Exit
+ * ----------------------------------------------------- */
+
+#custom-exit {
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: white;
+}
+
+/* -----------------------------------------------------
+ * Hardware Group
+ * ----------------------------------------------------- */
+
+/* #disk, */
+/* #memory, */
+/* #cpu, */
+/* #language { */
+/*     margin: 0px; */
+/*     padding: 0px; */
+/*     font-size: 16px; */
+/*     color: @iconcolor; */
+/* } */
+/**/
+/* #language { */
+/*     margin-right: 10px; */
+/* } */
+
 /* -----------------------------------------------------
  * Tray
  * ----------------------------------------------------- */
 
-#tray {
-    margin: 0px 10px 0px 0px;
-}
+/* #tray { */
+/*     margin: 0px 10px 0px 0px; */
+/* } */
+/**/
+/* #tray > .passive { */
+/*     -gtk-icon-effect: dim; */
+/* } */
+/**/
+/* #tray > .needs-attention { */
+/*     -gtk-icon-effect: highlight; */
+/*     background-color: #eb4d4b; */
+/* } */
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
+/* -----------------------------------------------------
+ * Idle Inhibator
+ * ----------------------------------------------------- */
 
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
-}
+/* #idle_inhibitor { */
+/*     margin-right: 15px; */
+/*     font-size: 22px; */
+/*     font-weight: bold; */
+/*     opacity: 0.8; */
+/*     color: @iconcolor; */
+/* } */
+/**/
+/* #idle_inhibitor.activated { */
+/*     margin-right: 15px; */
+/*     font-size: 20px; */
+/*     font-weight: bold; */
+/*     opacity: 0.8; */
+/*     color: #dc2f2f; */
+/* } */
+
+/* -----------------------------------------------------
+ * Custom Quicklinks
+ * ----------------------------------------------------- */
+
+/* #custom-hyprshade { */
+/*     margin-right: 12px; */
+/* } */
+/**/
+/* #custom-hypridle { */
+/*     margin-right: 16px; */
+/* } */
+/**/
+/* #custom-hypridle.active { */
+/*     color: @iconcolor; */
+/* } */
+/**/
+/* #custom-hypridle.notactive { */
+/*     color: #dc2f2f; */
+/* } */
+/**/
+/* #custom-waybarthemes, */
+/* #custom-system { */
+/*     margin-right: 15px; */
+/* } */
 
 /* -----------------------------------------------------
  * Other

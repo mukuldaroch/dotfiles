@@ -113,3 +113,48 @@ cdf() {
 
     cd "$result" || return
 }
+
+
+fixjdtls() {
+  set -e
+
+  # COLORS
+  local b="\e[34m"   # BLUE
+  local re="\e[31m"  # RED
+  local g="\e[32m"   # GREEN
+  local r="\e[0m"    # RESET
+
+  if [ -z "$1" ]; then
+    echo -e "${re}Error: Project path not provided${r}"
+    echo "Usage: fix_jdtls /absolute/or/relative/project/path"
+    return 1
+  fi
+
+  local PROJECT_DIR="$1"
+
+  if [ ! -d "$PROJECT_DIR" ]; then
+    echo -e "${re}Error: Directory does not exist → $PROJECT_DIR${r}"
+    return 1
+  fi
+
+  echo -e "${b} Switching to project: $PROJECT_DIR ${r}"
+  pushd "$PROJECT_DIR" > /dev/null
+
+  echo " "
+  echo -e "${re} Removing project Gradle artifacts...${r}"
+  rm -rf .gradle build
+
+  echo -e "${re} Removing global Gradle caches...${r}"
+  rm -rf ~/.gradle/caches
+
+  echo -e "${re} Removing JDTLS caches...${r}"
+  rm -rf ~/.cache/jdtls
+  rm -rf ~/.local/share/nvim/jdtls
+
+  echo " "
+  echo -e "${b} Rebuilding project (clean build)...${r}"
+  ./gradlew clean build
+
+  echo " "
+  echo -e "${g} All done. Restart Neovim and let JDTLS breathe again.${r}"
+}

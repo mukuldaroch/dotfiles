@@ -69,11 +69,11 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{volume}%  {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format-muted": "  {format_source}",
         //"format-source": "{volume}% ",
         "format-source": "",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": " ",
             "hands-free": " ",
@@ -81,7 +81,7 @@
             "phone": " ",
             "portable": " ",
             "car": " ",
-            "default": ["", "", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
@@ -93,9 +93,8 @@
     // "format-connected": " ⬍ ",
     // Bluetooth
     "bluetooth": {
-        //"format": " {status}",
         "format": " {status}",
-        "format-connected": " 🔗",
+        "format-connected": "",
         "format-off": "󰂲 Off",
         "format-disabled": " {status}",
         "interval": 30,

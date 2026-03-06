@@ -7,8 +7,8 @@
     "layer": "top",
 
     // Negative margins pull the bar tighter to the screen edges
-    "margin-top": -7,
-    "margin-bottom": -7,
+    "margin-top": -10,
+    "margin-bottom": -10,
 
     // Horizontal spacing from screen edges
     "margin-left": 0,
