@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/daroch/.config/nvim/lua/plugins'
+let g:netrw_dirhist_4='/home/daroch/.config/nvim/lua'
+let g:netrw_dirhist_3='/home/daroch/.config/nvim'
+let g:netrw_dirhist_2='/home/daroch/code/projects/tickets/src/main/java/com/daroch/tickets/domain/dtos'
+let g:netrw_dirhist_1='/home/daroch/code/projects/tickets/src/main/java/com/daroch/tickets/domain'
+let g:netrw_dirhist_0='/home/daroch/code/projects/tickets/src/main/java/com/daroch/tickets'
+let g:netrw_dirhist_9='/home/daroch/code/projects/tickets/src/main/java/com/daroch'
+let g:netrw_dirhist_8='/home/daroch/code/projects/tickets/src/main/java/com'
+let g:netrw_dirhist_7='/home/daroch/code/projects/tickets/src/main/java'
+let g:netrw_dirhist_6='/home/daroch/code/projects/tickets/src/main'
