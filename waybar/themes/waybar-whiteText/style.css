@@ -2,11 +2,9 @@
    Colors
 ----------------------------------------------------- */
 
-@define-color background #000000;
 @define-color workspace-active #aaaaaa;
 @define-color text #ffffff;
 @define-color text-dark #000000;
-
 
 /* -----------------------------------------------------
    Global
@@ -14,8 +12,8 @@
 
 * {
     font-family:
-        "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome,
-        Roboto, Helvetica, Arial, sans-serif;
+        "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto,
+        Helvetica, Arial, sans-serif;
     border: none;
 }
 
@@ -25,7 +23,6 @@ window#waybar {
     border: none;
     transition: background-color 0.3s ease;
 }
-
 
 /* -----------------------------------------------------
    Workspaces
@@ -68,7 +65,6 @@ window#waybar {
     font-size: 14px;
 }
 
-
 /* -----------------------------------------------------
    Modules
 ----------------------------------------------------- */
@@ -85,20 +81,34 @@ window#waybar {
     margin: 10px 15px 10px 0;
 }
 
-
 /* -----------------------------------------------------
    Battery states
 ----------------------------------------------------- */
 
+#battery {
+    color: @text;
+    background: transparent;
+}
+
+/* Good battery state (above 90%) - Green background */
 #battery.good.charging {
-    color: #4caf50;
+    color: #4caf50; /* Green */
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @text;
+}
+
+@keyframes blink {
+    to {
+        color: @text;
+    }
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: @text-dark;
+    color: #f53c3c;
 }
-
 
 /* -----------------------------------------------------
    Network

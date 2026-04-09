@@ -6,8 +6,10 @@ mime=$(file --mime-type -b "$file")
 
 case "$mime" in
     video/*)
+        pkill -x mpv
         mpv --force-window "$file" &
-        notify-send "Playing" "$(basename "$file")"
+	# ffplay "$file"
+        # notify-send "Playing" "$(basename "$file")"
         ;;
     audio/*)
         # Kill any existing mpv process

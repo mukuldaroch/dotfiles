@@ -38,4 +38,4 @@ set -o vi
 # Created by `pipx` on 2025-07-11 14:51:47
 export PATH="$PATH:/home/daroch/.local/bin"
 alias fd="fd -E node_modules -E .git -E dist"
-
+alias ta="bash ~/.config/bashrc/scripts/full.sh"

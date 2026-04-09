@@ -8,13 +8,13 @@
 # Check to use wallpaper cache
 # -----------------------------------------------------
 
-if [ -f ~/.config/daroch/settings/wallpaper_cache ]; then
-    use_cache=1
-    echo ":: Using Wallpaper Cache"
-else
-    use_cache=0
-    echo ":: Wallpaper Cache disabled"
-fi
+# if [ -f ~/.config/daroch/settings/wallpaper_cache ]; then
+#     use_cache=1
+#     echo ":: Using Wallpaper Cache"
+# else
+#     use_cache=0
+#     echo ":: Wallpaper Cache disabled"
+# fi
 
 # -----------------------------------------------------
 # Set defaults
@@ -22,21 +22,20 @@ fi
 
 force_generate=0
 generatedversions="$HOME/.config/daroch/cache/wallpaper-generated"
-waypaperrunning=$HOME/.config/daroch/cache/waypaper-running
+# waypaperrunning=$HOME/.config/daroch/cache/waypaper-running
 cachefile="$HOME/.config/daroch/cache/current_wallpaper"
 blurredwallpaper="$HOME/.config/daroch/cache/wallpaper-generated/blurred_wallpaper.png"
 rasifile="$HOME/.config/daroch/cache/current_wallpaper.rasi"
-blurfile="$HOME/.config/daroch/settings/blur.sh"
+# blurfile="$HOME/.config/daroch/settings/blur.sh"
 defaultwallpaper="$HOME/Pictures/wallpaper/clay-banks.jpg"
-wallpapereffect="$HOME/.config/daroch/settings/wallpaper-effect.sh"
+# wallpapereffect="$HOME/.config/daroch/settings/wallpaper-effect.sh"
 blur="2x2"
-blur=$(cat $blurfile)
 
-# Ensures that the script only run once if wallpaper effect enabled
-if [ -f $waypaperrunning ]; then
-    rm $waypaperrunning
-    exit
-fi
+# # Ensures that the script only run once if wallpaper effect enabled
+# if [ -f $waypaperrunning ]; then
+#     rm $waypaperrunning
+#     exit
+# fi
 
 # Create folder with generated versions of wallpaper if not exists
 if [ ! -d $generatedversions ]; then
@@ -48,11 +47,14 @@ fi
 # -----------------------------------------------------
 
 if [ -z $1 ]; then
-    if [ -f $cachefile ]; then
-        wallpaper=$(cat $cachefile)
-    else
-        wallpaper=$defaultwallpaper
+    if [ -z "$1" ]; then
+        exit 0
     fi
+    # if [ -f $cachefile ]; then
+    #     wallpaper=$(cat $cachefile)
+    # else
+    #     wallpaper=$defaultwallpaper
+    # fi
 else
     wallpaper=$1
 fi
@@ -79,27 +81,27 @@ echo ":: Wallpaper Filename: $wallpaperfilename"
 # Wallpaper Effects
 # -----------------------------------------------------
 
-if [ -f $wallpapereffect ]; then
-    effect=$(cat $wallpapereffect)
-    if [ ! "$effect" == "off" ]; then
-        used_wallpaper=$generatedversions/$effect-$wallpaperfilename
-        if [ -f $generatedversions/$effect-$wallpaperfilename ] && [ "$force_generate" == "0" ] && [ "$use_cache" == "1" ]; then
-            echo ":: Use cached wallpaper $effect-$wallpaperfilename"
-        else
-            echo ":: Generate new cached wallpaper $effect-$wallpaperfilename with effect $effect"
-            notify-send --replace-id=1 "Using wallpaper effect $effect..." "with image $wallpaperfilename" -h int:value:33
-            source $HOME/.config/hypr/effects/wallpaper/$effect
-        fi
-        echo ":: Loading wallpaper $generatedversions/$effect-$wallpaperfilename with effect $effect"
-        echo ":: Setting wallpaper with $used_wallpaper"
-        touch $waypaperrunning
-        waypaper --wallpaper $used_wallpaper
-    else
-        echo ":: Wallpaper effect is set to off"
-    fi
-else
-    effect="off"
-fi
+# if [ -f $wallpapereffect ]; then
+#     effect=$(cat $wallpapereffect)
+#     if [ ! "$effect" == "off" ]; then
+#         used_wallpaper=$generatedversions/$effect-$wallpaperfilename
+#         if [ -f $generatedversions/$effect-$wallpaperfilename ] && [ "$force_generate" == "0" ] && [ "$use_cache" == "1" ]; then
+#             echo ":: Use cached wallpaper $effect-$wallpaperfilename"
+#         else
+#             echo ":: Generate new cached wallpaper $effect-$wallpaperfilename with effect $effect"
+#             notify-send --replace-id=1 "Using wallpaper effect $effect..." "with image $wallpaperfilename" -h int:value:33
+#             source $HOME/.config/hypr/effects/wallpaper/$effect
+#         fi
+#         echo ":: Loading wallpaper $generatedversions/$effect-$wallpaperfilename with effect $effect"
+#         echo ":: Setting wallpaper with $used_wallpaper"
+#         touch $waypaperrunning
+#         waypaper --wallpaper $used_wallpaper
+#     else
+#         echo ":: Wallpaper effect is set to off"
+#     fi
+# else
+#     effect="off"
+# fi
 
 # -----------------------------------------------------
 # Execute pywal

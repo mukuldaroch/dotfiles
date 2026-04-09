@@ -6,7 +6,6 @@ alias q='exit'
 alias vim='nvim'
 alias py='python'
 alias y='yazi'
-alias t='tmux'
 alias disk='dysk'
 # -----------------------------------------------------
 # Bluetooth
@@ -15,6 +14,7 @@ alias bl='bluetoothctl'
 alias blc="bluetoothctl <<< 'connect 84:0F:2A:DB:2D:0E'"
 # -----------------------------------------------------
 alias vimt='cd ~/.config/tmux && nvim tmux.conf'
+alias vimta='nvim ~/.taskrc'
 alias vimv='cd ~/.config/nvim && nvim'
 alias vimb='nvim ~/.bashrc'
 alias sourceb='source ~/.bashrc'
@@ -29,6 +29,9 @@ alias lt='eza -a --tree --level=1 --icons=always'
 alias shutdown='systemctl poweroff'
 alias v='$EDITOR'
 alias vim='$EDITOR'
+alias t="taskwarrior-tui"
+alias lt="lazytask"
+
 
 # -----------------------------------------------------
 # Git
@@ -45,14 +48,8 @@ alias gcheck="git checkout"
 alias gcredential="git config credential.helper store"
 
 # -----------------------------------------------------
-# Scripts
-# -----------------------------------------------------
-alias ascii='~/.config/daroch/scripts/figlet.sh'
-
-# -----------------------------------------------------
 # System
 # -----------------------------------------------------
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # -----------------------------------------------------
 # Music

@@ -1,0 +1,77 @@
+# [Created by task 3.4.2 3/31/2026 02:58:20]
+news.version=3.4.2
+
+data.location=~/.config/task
+
+
+##### Color theme (uncomment one to use)
+#include /usr/share/doc/task/rc/light-16.theme
+#include /usr/share/doc/task/rc/light-256.theme
+#include /usr/share/doc/task/rc/dark-16.theme
+#include /usr/share/doc/task/rc/dark-256.theme
+include /usr/share/doc/task/rc/dark-red-256.theme
+#include /usr/share/doc/task/rc/dark-green-256.theme
+#include /usr/share/doc/task/rc/dark-blue-256.theme
+#include /usr/share/doc/task/rc/dark-violets-256.theme
+#include /usr/share/doc/task/rc/dark-yellow-green.theme
+#include /usr/share/doc/task/rc/dark-gray-256.theme
+#include /usr/share/doc/task/rc/dark-gray-blue-256.theme
+#include /usr/share/doc/task/rc/solarized-dark-256.theme
+#include /usr/share/doc/task/rc/solarized-light-256.theme
+#include /usr/share/doc/task/rc/no-color.theme
+
+color.active=color111 on color60
+color.overdue=color203
+color.due.today=color215
+color.due=color111
+color.blocked=color245
+color.tagged=color141
+color.recurring=color147
+color.scheduled=color109
+
+uda.taskwarrior-tui.selection.indicator=•
+uda.taskwarrior-tui.selection.bold=yes
+uda.taskwarrior-tui.selection.italic=no
+uda.taskwarrior-tui.selection.dim=no
+uda.taskwarrior-tui.selection.blink=no
+uda.taskwarrior-tui.selection.reverse=no
+uda.taskwarrior-tui.mark.indicator=✔
+uda.taskwarrior-tui.unmark.indicator=
+uda.taskwarrior-tui.mark-selection.indicator=⦿
+uda.taskwarrior-tui.unmark-selection.indicator=⦾
+uda.taskwarrior-tui.calendar.months-per-row=4
+uda.taskwarrior-tui.task-report.show-info=true
+uda.taskwarrior-tui.task-report.looping=true
+uda.taskwarrior-tui.task-report.use-alternate-style=true
+uda.taskwarrior-tui.task-report.jump-on-task-add=true
+uda.taskwarrior-tui.task-report.prompt-on-undo=true
+uda.taskwarrior-tui.task-report.prompt-on-delete=true
+uda.taskwarrior-tui.task-report.prompt-on-done=true
+uda.taskwarrior-tui.style.report.selection=
+uda.taskwarrior-tui.style.context.active=black on rgb444
+uda.taskwarrior-tui.style.report-menu.active=black on rgb444
+uda.taskwarrior-tui.style.calendar.title=black on rgb444
+uda.taskwarrior-tui.style.report.scrollbar=gray
+uda.taskwarrior-tui.scrollbar.indicator=█
+uda.taskwarrior-tui.style.report.scrollbar.area=white
+uda.taskwarrior-tui.scrollbar.area=║
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-add=true
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-annotate=true
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-log=true
+uda.taskwarrior-tui.task-report.reset-filter-on-esc=true
+uda.taskwarrior-tui.context-menu.select-on-move=true
+uda.taskwarrior-tui.context-menu.close-on-select=true
+uda.taskwarrior-tui.report-menu.select-on-move=true
+uda.taskwarrior-tui.report-menu.close-on-select=true
+uda.taskwarrior-tui.tabs.change-focus-rotate=true
+
+### UI chrome styles (support all Taskwarrior color formats)
+uda.taskwarrior-tui.style.title=blue         # default: LightCyan foreground
+uda.taskwarrior-tui.style.title.border=blue  # default: White foreground
+uda.taskwarrior-tui.style.help.gauge=blue    # default: Gray foreground
+uda.taskwarrior-tui.style.command.error=blue # default: Red foreground
+
+uda.taskwarrior-tui.scrollbar.area=I
+uda.taskwarrior-tui.style.report.scrollbar.area=blue on red
+uda.taskwarrior-tui.scrollbar.indicator=O
+uda.taskwarrior-tui.style.report.scrollbar=red on blue

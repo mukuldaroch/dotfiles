@@ -7,19 +7,20 @@
 #                                 |___/
 #
 
-wallpaper_engine=$(cat $HOME/.config/daroch/settings/wallpaper-engine.sh)
-if [ "$wallpaper_engine" == "swww" ]; then
-    # swww
-    echo ":: Using swww"
-    swww-daemon --format xrgb
+# wallpaper_engine=$(cat $HOME/.config/daroch/settings/wallpaper-engine.sh)
+wallpaper_engine= "awww"
+if [ "$wallpaper_engine" == "awww" ]; then
+    # awww
+    echo ":: Using awww"
+    awww-daemon --format xrgb
     sleep 0.5
-    ~/.config/hypr/scripts/wallpaper.sh init
+    # ~/.config/hypr/scripts/wallpaper.sh init
 elif [ "$wallpaper_engine" == "hyprpaper" ]; then
     # hyprpaper
     echo ":: Using hyprpaper"
     sleep 0.5
-    ~/.config/hypr/scripts/wallpaper.sh init
+    # ~/.config/hypr/scripts/wallpaper.sh init
 else
     echo ":: Wallpaper Engine disabled"
-    ~/.config/hypr/scripts/wallpaper.sh init
+    # ~/.config/hypr/scripts/wallpaper.sh init
 fi
