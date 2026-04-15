@@ -1,0 +1,4 @@
+mapKey <c-;> <esc>
+mapKey <y> <yt>
+unmap <esc>
+map i enterInsertMode

@@ -8,11 +8,11 @@
 #
 
 if [ -f $HOME/.config/daroch/settings/gamemode-enabled ]; then
-    hyprctl reload
-    rm $HOME/.config/daroch/settings/gamemode-enabled
-    notify-send "Gamemode deactivated" "Animations and blur enabled"
+	hyprctl reload
+	rm $HOME/.config/daroch/settings/gamemode-enabled
+	notify-send "Gamemode deactivated" "Animations and blur enabled"
 else
-    hyprctl --batch "\
+	hyprctl --batch "\
         keyword animations:enabled 0;\
         keyword decoration:shadow:enabled 0;\
         keyword decoration:blur:enabled 0;\
@@ -20,6 +20,6 @@ else
         keyword general:gaps_out 0;\
         keyword general:border_size 1;\
         keyword decoration:rounding 0"
-    touch $HOME/.config/daroch/settings/gamemode-enabled
-    notify-send "Gamemode activated" "Animations and blur disabled"
+	touch $HOME/.config/daroch/settings/gamemode-enabled
+	notify-send "Gamemode activated" "Animations and blur disabled"
 fi

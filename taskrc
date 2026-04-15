@@ -1,77 +1,142 @@
-# [Created by task 3.4.2 3/31/2026 02:58:20]
-news.version=3.4.2
-
-data.location=~/.config/task
-
-
-##### Color theme (uncomment one to use)
-#include /usr/share/doc/task/rc/light-16.theme
-#include /usr/share/doc/task/rc/light-256.theme
-#include /usr/share/doc/task/rc/dark-16.theme
-#include /usr/share/doc/task/rc/dark-256.theme
-include /usr/share/doc/task/rc/dark-red-256.theme
-#include /usr/share/doc/task/rc/dark-green-256.theme
-#include /usr/share/doc/task/rc/dark-blue-256.theme
-#include /usr/share/doc/task/rc/dark-violets-256.theme
-#include /usr/share/doc/task/rc/dark-yellow-green.theme
-#include /usr/share/doc/task/rc/dark-gray-256.theme
-#include /usr/share/doc/task/rc/dark-gray-blue-256.theme
-#include /usr/share/doc/task/rc/solarized-dark-256.theme
-#include /usr/share/doc/task/rc/solarized-light-256.theme
-#include /usr/share/doc/task/rc/no-color.theme
-
-color.active=color111 on color60
-color.overdue=color203
-color.due.today=color215
-color.due=color111
-color.blocked=color245
-color.tagged=color141
-color.recurring=color147
-color.scheduled=color109
-
-uda.taskwarrior-tui.selection.indicator=•
-uda.taskwarrior-tui.selection.bold=yes
-uda.taskwarrior-tui.selection.italic=no
-uda.taskwarrior-tui.selection.dim=no
-uda.taskwarrior-tui.selection.blink=no
-uda.taskwarrior-tui.selection.reverse=no
-uda.taskwarrior-tui.mark.indicator=✔
-uda.taskwarrior-tui.unmark.indicator=
-uda.taskwarrior-tui.mark-selection.indicator=⦿
-uda.taskwarrior-tui.unmark-selection.indicator=⦾
-uda.taskwarrior-tui.calendar.months-per-row=4
-uda.taskwarrior-tui.task-report.show-info=true
-uda.taskwarrior-tui.task-report.looping=true
-uda.taskwarrior-tui.task-report.use-alternate-style=true
-uda.taskwarrior-tui.task-report.jump-on-task-add=true
-uda.taskwarrior-tui.task-report.prompt-on-undo=true
-uda.taskwarrior-tui.task-report.prompt-on-delete=true
-uda.taskwarrior-tui.task-report.prompt-on-done=true
-uda.taskwarrior-tui.style.report.selection=
-uda.taskwarrior-tui.style.context.active=black on rgb444
-uda.taskwarrior-tui.style.report-menu.active=black on rgb444
-uda.taskwarrior-tui.style.calendar.title=black on rgb444
-uda.taskwarrior-tui.style.report.scrollbar=gray
-uda.taskwarrior-tui.scrollbar.indicator=█
-uda.taskwarrior-tui.style.report.scrollbar.area=white
-uda.taskwarrior-tui.scrollbar.area=║
-uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-add=true
-uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-annotate=true
-uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-log=true
-uda.taskwarrior-tui.task-report.reset-filter-on-esc=true
-uda.taskwarrior-tui.context-menu.select-on-move=true
-uda.taskwarrior-tui.context-menu.close-on-select=true
-uda.taskwarrior-tui.report-menu.select-on-move=true
-uda.taskwarrior-tui.report-menu.close-on-select=true
-uda.taskwarrior-tui.tabs.change-focus-rotate=true
-
-### UI chrome styles (support all Taskwarrior color formats)
-uda.taskwarrior-tui.style.title=blue         # default: LightCyan foreground
-uda.taskwarrior-tui.style.title.border=blue  # default: White foreground
-uda.taskwarrior-tui.style.help.gauge=blue    # default: Gray foreground
-uda.taskwarrior-tui.style.command.error=blue # default: Red foreground
-
-uda.taskwarrior-tui.scrollbar.area=I
-uda.taskwarrior-tui.style.report.scrollbar.area=blue on red
-uda.taskwarrior-tui.scrollbar.indicator=O
-uda.taskwarrior-tui.style.report.scrollbar=red on blue
+alacritty 0.16.1-1
+android-file-transfer 4.5-2
+awww 0.12.0-1
+aylurs-gtk-shell 3.1.0-1
+base 3-3
+base-devel 1-2
+bash-completion 2.17.0-3
+bash-language-server 5.6.0-1
+bat 0.26.1-2
+blueman 2.4.6-2
+bluez 5.86-4
+bluez-utils 5.86-4
+brave-bin 1:1.88.136-1
+breeze-gtk 6.6.3-1
+brightnessctl 0.5.1-3
+btop 1.4.6-2
+btrfs-progs 6.19.1-1
+checkupdates-with-aur 1.0-1
+clang 22.1.2-1
+cliphist 1:0.7.0-2
+docker 1:29.3.1-1
+docker-compose 5.1.1-1
+dunst 1.13.2-1
+efibootmgr 18-3
+eza 0.23.4-3
+fd 10.4.2-1
+foliate 3.3.0-2
+fuse2 2.9.9-5
+fzf 0.71.0-1
+git 2.53.0-1
+github-cli 2.89.0-1
+glow 2.1.1-1
+go 2:1.26.1-1
+gofumpt 0.7.0-2
+gphoto2 2.5.32-1
+gradle 9.4.1-1
+graphite-gtk-theme 2025.07.06-1
+grim 1.5.0-2
+grimblast-git r113.2967407-1
+gst-plugin-pipewire 1:1.6.2-1
+gtk4 1:4.20.4-1
+gvfs-mtp 1.58.3-1
+htop 3.4.1-1
+hypridle 0.1.7-8
+hyprlock 0.9.3-2
+hyprpicker 0.4.6-3
+hyprshade 4.0.1-1
+imagemagick 7.1.2.18-1
+intel-ucode 20260227-1
+intltool 0.51.0-6
+jdk21-openjdk 21.0.10.u7-1
+jq 1.8.1-1
+keyd 2.6.0-5
+kid3 3.9.7-2
+kitty 0.46.2-1
+lazygit 0.60.0-1
+less 1:692-1
+libadwaita 1:1.8.4-1
+libiconv 1.19-1
+libnotify 0.8.8-1
+libpulse 17.0+r98+gb096704c0-1
+linux 6.19.11.arch1-1
+linux-firmware 20260309-1
+linux-headers 6.19.11.arch1-1
+linux-lts 6.18.21-1
+linux-lts-headers 6.18.21-1
+lsof 4.99.6-1
+luarocks 3.13.0-5
+mpv 1:0.41.0-3
+mtpfs 1.1-5
+nautilus 49.5-1
+nautilus-open-any-terminal 0.8.0-1
+neovim 0.11.7-1
+network-manager-applet 1.36.0-1
+networkmanager 1.56.0-1
+nm-connection-editor 1.36.0-1
+noto-fonts-cjk 20240730-1
+noto-fonts-emoji 1:2.051-1
+noto-fonts-extra 1:2026.04.01-1
+ntfs-3g 2022.10.3-2
+nwg-dock-hyprland 0.4.8-4
+nwg-look 1.0.6-1
+oh-my-posh-bin 29.9.2-1
+otf-font-awesome 7.2.0-1
+papirus-icon-theme 20250501-1
+pavucontrol 1:6.2-1
+pgcli 4.4.0-2
+pipewire 1:1.6.2-1
+pipewire-alsa 1:1.6.2-1
+pipewire-jack 1:1.6.2-1
+pipewire-pulse 1:1.6.2-1
+polkit-gnome 0.105-12
+postman-bin 12.3.0-1
+prettier 3.8.1-1
+python-black 26.3.1-1
+python-gobject 3.54.5-2
+python-pip 26.0.1-1
+python-pipx 1.11.1-1
+python-pywal 3.3.0-11
+python-screeninfo 0.8.1-2
+qt5-graphicaleffects 5.15.18-1
+qt5-quickcontrols2 5.15.18+kde+r5-1
+qt5-svg 5.15.18+kde+r5-1
+qt6-5compat 6.11.0-1
+rofi 2.0.0-1
+rsync 3.4.1-2
+rust 1:1.94.1-1
+sassc 3.6.2-5
+sddm 0.21.0-6
+slurp 1.5.0-1
+socat 1.8.1.1-1
+task 3.4.2-1
+taskwarrior-tui 0.26.10-1
+tcpdump 4.99.6-1
+tk 8.6.16-1
+tmux 3.6_a-1
+trash-cli 0.24.5.26-3
+tree 2.3.2-1
+ttf-dejavu 2.37+18+g9b5d1b2f-7
+ttf-fira-code 6.2-2
+ttf-fira-sans 1:4.301-2
+ttf-firacode-nerd 3.4.0-2
+tumbler 4.20.1-1
+typescript 5.9.3-2
+uwsm 0.26.4-1
+v4l2loopback-dkms 0.15.3-1
+viewnior 1.8-7
+vim 9.2.0283-1
+waybar 0.15.0-2
+waypaper-git 2.7.r61.ge8f63ef-1
+wf-recorder 0.6.0-1
+wget 1.25.0-3
+wireplumber 0.5.14-1
+wlogout 1.2.2-0
+xclip 0.13-6
+xdg-desktop-portal-gtk 1.15.3-1
+yay 12.5.7-1
+yay-debug 12.5.7-1
+yazi 25.5.31-2
+yt-dlp 2026.03.17-1
+zoxide 0.9.9-2
+zram-generator 1.2.1-1
