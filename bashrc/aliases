@@ -30,8 +30,6 @@ alias shutdown='systemctl poweroff'
 alias v='$EDITOR'
 alias vim='$EDITOR'
 alias t="taskwarrior-tui"
-alias lt="lazytask"
-
 
 # -----------------------------------------------------
 # Git
@@ -115,43 +113,50 @@ cdf() {
 fixjdtls() {
   set -e
 
-  # COLORS
-  local b="\e[34m"   # BLUE
-  local re="\e[31m"  # RED
-  local g="\e[32m"   # GREEN
-  local r="\e[0m"    # RESET
+  local b="\e[34m"
+  local re="\e[31m"
+  local g="\e[32m"
+  local y="\e[33m"
+  local r="\e[0m"
 
   if [ -z "$1" ]; then
     echo -e "${re}Error: Project path not provided${r}"
-    echo "Usage: fix_jdtls /absolute/or/relative/project/path"
+    echo "Usage: fixjdtls <project_path>"
     return 1
   fi
 
-  local PROJECT_DIR="$1"
+  local PROJECT_DIR="$(realpath "$1")"
 
   if [ ! -d "$PROJECT_DIR" ]; then
-    echo -e "${re}Error: Directory does not exist → $PROJECT_DIR${r}"
+    echo -e "${re}Directory does not exist → $PROJECT_DIR${r}"
     return 1
   fi
 
-  echo -e "${b} Switching to project: $PROJECT_DIR ${r}"
-  pushd "$PROJECT_DIR" > /dev/null
+  echo -e "${b}→ Switching to project: $PROJECT_DIR${r}"
+  cd "$PROJECT_DIR"
 
-  echo " "
-  echo -e "${re} Removing project Gradle artifacts...${r}"
+  echo -e "${re}→ Removing project Gradle artifacts...${r}"
   rm -rf .gradle build
 
-  echo -e "${re} Removing global Gradle caches...${r}"
+  echo -e "${re}→ Removing global Gradle caches + daemon...${r}"
   rm -rf ~/.gradle/caches
+  rm -rf ~/.gradle/daemon
 
-  echo -e "${re} Removing JDTLS caches...${r}"
-  rm -rf ~/.cache/jdtls
-  rm -rf ~/.local/share/nvim/jdtls
+  echo -e "${re}→ Removing JDTLS workspace (REAL fix)...${r}"
+  rm -rf ~/.local/share/nvim/jdtls-workspace
 
-  echo " "
-  echo -e "${b} Rebuilding project (clean build)...${r}"
-  ./gradlew clean build
+  echo -e "${y}→ Checking gradlew...${r}"
+  if [ ! -f "./gradlew" ]; then
+    echo -e "${re}gradlew not found. Are you in correct project root?${r}"
+    return 1
+  fi
 
-  echo " "
-  echo -e "${g} All done. Restart Neovim and let JDTLS breathe again.${r}"
+  chmod +x ./gradlew
+
+  echo -e "${b}→ Rebuilding project...${r}"
+  ./gradlew clean build --refresh-dependencies
+
+  echo -e "${g}✔ Done. Restart Neovim + :JdtUpdateConfig${r}"
 }
+
+alias nukejava='rm -rf ~/.gradle/caches ~/.gradle/daemon'

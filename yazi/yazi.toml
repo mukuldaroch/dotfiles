@@ -3,10 +3,10 @@ ratio = [3, 5, 10]
 
 [opener]
 play = [ { run = '/home/daroch/.config/yazi/play.sh "$@"', orphan = true } ]
+open = [ { run = '/home/daroch/.config/yazi/image.sh "$@"', orphan = true } ]
 
-# Example of adding Viewnior to the existing image rules
-# [[open.prepend_rules]]
-# mime = "image/*"
-# use = [ "viewnior", "open" ]
-
-
+[manager]
+sort_by      = "mtime"
+sort_sensitive = false
+sort_reverse   = false
+sort_dir_first = true

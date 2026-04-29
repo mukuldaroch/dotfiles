@@ -1,37 +1,25 @@
-# Based on https://github.com/hyprwm/contrib/blob/main/grimblast/screenshot.sh 
-# ----------------------------------------------------- 
-
-# Screenshots will be stored in $HOME by default.
-# The screenshot will be moved into the screenshot directory
-
-# Add this to ~/.config/user-dirs.dirs to save screenshots in a custom folder: 
-# XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
-
 #!/bin/bash
 
 prompt='Screenshot'
 mesg="DIR: ~/Screenshots"
 
 # Screenshot Filename
-source ~/.config/daroch/settings/screenshot-filename.sh
+NAME="screenshot_$(date +%d%m%Y_%H%M%S).jpg"
 
 # Screenshot Folder
-source ~/.config/daroch/settings/screenshot-folder.sh
-
-# Screenshot Editor
-export GRIMBLAST_EDITOR="$(cat ~/.config/daroch/settings/screenshot-editor.sh)"
+screenshot_folder="$HOME/Pictures/screenshots/"
 
 # Take screenshot immediately
 takescreenshot() {
- #   sleep 1
-    grimblast save active "$HOME/$NAME"
+	#   sleep 1
+	grimblast save active "$HOME/$NAME"
 
-    # Move to the screenshot folder if defined
-    if [ -f "$HOME/$NAME" ] && [ -d "$screenshot_folder" ]; then
-        mv "$HOME/$NAME" "$screenshot_folder/"
-    fi
+	# Move to the screenshot folder if defined
+	if [ -f "$HOME/$NAME" ] && [ -d "$screenshot_folder" ]; then
+		mv "$HOME/$NAME" "$screenshot_folder/"
+	fi
 
-    notify-send "Screenshot Taken" "Saved to $screenshot_folder"
+	notify-send "Screenshot Taken" "Saved to $screenshot_folder"
 }
 
 # Run screenshot function
